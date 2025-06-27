@@ -1,0 +1,77 @@
+
+/* Base Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Background Gradient Animation */
+body, html {
+height: 100%;
+font-family: 'Orbitron', sans-serif;
+}
+
+.background {
+height: 40vh; 
+width: 100%;
+position: relative;
+background: linear-gradient(-45deg, #f04be5, #6600ff, #00e6e6, #ffff00);
+background-size: 400% 400%;
+animation: gradientShift 15s ease infinite;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@keyframes gradientShift {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+/* Logo Styles */
+
+.orbitron-<uniquifier {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.logo-container {
+text-align: center;
+}
+
+.logo-text {
+font-size: 4rem;
+color: #fcb2e6;
+text-shadow:
+0 0 5px #ff00ff,
+0 0 10px #ff00ff,
+0 0 20px #971997,
+0 0 40px #ff00ff,
+0 0 80px #ff00ff;
+animation: pulse 3s infinite;
+}
+
+.logo-text span {
+color: #bff3f9;
+text-shadow:
+0 0 5px #3fefef,
+0 0 10px #1bb1b1,
+0 0 20px #2fd6d6;
+}
+
+@keyframes pulse {
+0%, 100% { transform: scale(1); }
+50% { transform: scale(1.05); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+.logo-text {
+font-size: 2.5rem;
+}
+}
+
