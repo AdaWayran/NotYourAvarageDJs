@@ -77,6 +77,13 @@ body, html {
   margin-bottom: 2rem;
 }
 
+a:link {
+  color: #ffffff;
+}
+a:hover {
+  color: hotpink;
+}
+
 .button-grid {
   display: flex;
   flex-wrap: wrap;
