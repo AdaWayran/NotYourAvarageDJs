@@ -78,10 +78,13 @@ body, html {
 }
 
 a:link {
-  color: #ffffff;
+  color: #e1e1e1;
 }
 a:hover {
-  color: hotpink;
+  color: rgb(255, 55, 232);
+}
+a:visited {
+  color: #e1e1e1;
 }
 
 .button-grid {
