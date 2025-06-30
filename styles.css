@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 :root {
-  --neon-blue: #00f9ff;
-  --neon-pink: #ff00e0;
-  --bg-dark: #0c001f;
+  --neon-blue: #ffffffbd;
+  --neon-pink: #23252de4;
+  --bg-dark: #000000;
 }
 
 * {
@@ -14,8 +14,9 @@
 
 body, html {
   height: 100%;
+  width: 100%;
   font-family: 'Orbitron', sans-serif;
-  background: var(--bg-dark);
+  background: linear-gradient(-45deg, #f04be5, #6600ff, #00e6e6, #ffff00)
   position: relative;
 }
 
@@ -25,14 +26,21 @@ body, html {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at center, rgba(0,0,0,0.1), rgba(0,0,0,0.9));
-  animation: rotateBg 60s linear infinite;
-  z-index: 0;
+  background: linear-gradient(-45deg, #f04be5, #6600ff, #00e6e6, #ffff00);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
 }
 
-@keyframes rotateBg {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .container {
@@ -65,7 +73,7 @@ body, html {
 
 .subtext {
   font-size: 1.2rem;
-  color: #eee;
+  color: #ffffffaa;
   margin-bottom: 2rem;
 }
 
@@ -78,13 +86,13 @@ body, html {
 
 .neon-btn {
   background: transparent;
-  border: 2px solid var(--neon-pink);
+  border: 2px solid #ffffff;
   padding: 1rem 2rem;
-  color: var(--neon-pink);
+  color: #ffffff;
   font-size: 1.1rem;
   cursor: pointer;
   text-transform: uppercase;
-  transition: all 0.3s ease;
+  transition: all 0,3s ease;
   position: relative;
   overflow: hidden;
 }
@@ -102,7 +110,7 @@ body, html {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at center, rgba(255,255,255,0.1), transparent);
+  background: linear-gradient(-45deg, #f04be5, #6600ff, #00e6e6, #ffff00);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -113,5 +121,5 @@ body, html {
 
 footer p {
   font-size: 0.9rem;
-  color: #888;
+  color: #e1e1e1;
 }
