@@ -71,11 +71,21 @@ body, html {
   to { text-shadow: 0 0 20px var(--neon-blue), 0 0 40px var(--neon-pink); }
 }
 
+.highlight {
+  color: #ffffffd5;
+  justify-content: center;
+}
 .subtext {
   font-size: 1.2rem;
   color: #ffffffaa;
   margin-bottom: 2rem;
+  text-align: justify;
+  text-justify: auto;
+  margin-left: 15%;
+  margin-right: 15%;
 }
+
+
 
 a:link {
   color: #e1e1e1;
