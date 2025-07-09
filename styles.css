@@ -6,7 +6,7 @@
   --bg-dark: #000000;
 }
 
-* {
+ * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -64,6 +64,7 @@ body, html {
     0 0 30px var(--neon-pink),
     0 0 40px var(--neon-pink);
   animation: neonFlash 2.5s ease-in-out infinite alternate;
+  
 }
 
 @keyframes neonFlash {
@@ -115,6 +116,8 @@ a:visited {
   transition: all 0,3s ease;
   position: relative;
   overflow: hidden;
+  font-family: 'Orbitron', sans-serif;
+  font-size: smaller;
 }
 
 .neon-btn:hover {
@@ -126,6 +129,7 @@ a:visited {
 .neon-btn::after {
   content: '';
   position: absolute;
+  z-index: -1;
   top: -50%;
   left: -50%;
   width: 200%;
